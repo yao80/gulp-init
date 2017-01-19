@@ -1,0 +1,24 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width,user-scalable=yes,initial-scale=1")
+    meta(name="format-detection", content="telephone=no")
+    block title
+    block meta
+    meta(property="og:title", content="サイトタイトル")
+    meta(property="og:site_name", content="サイトネーム")
+    block ogpType
+    meta(property="og:description", content="サイトディスクリプション")
+    meta(property="og:url", content="http://example.com")
+    meta(property="og:image", content="http://example.com/ogp.png")
+    include ie
+    link(rel="stylesheet", type="text/css", href="/css/style.css", media="all")
+    include ga
+  body
+    .container
+      include header
+      block body
+      include footer
+    include js

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+//////////////////////////////////////////////////////////////////////////
+//
+//  Vendor: font-awesome/base
+//
+//////////////////////////////////////////////////////////////////////////
+
+//Override Font Awesome path 
+$fa-font-path: "../../../../build/common/fonts/font-awesome";
+
+@import "variables";
+@import "mixins";
+@import "path";
+@import "core";
+@import "larger";
+@import "fixed-width";
+@import "list";
+@import "bordered-pulled";
+@import "animated";
+@import "rotated-flipped";
+@import "stacked";
+@import "icons";
+@import "screen-reader";

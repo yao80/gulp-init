@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+//////////////////////////////////////////////////////////////////////////
+//
+//  Partials: common/body
+//
+//////////////////////////////////////////////////////////////////////////
+
+body {
+  background-color: $body-bg;
+  font-family: $font-family-base;
+  @include font-size($font-size-base);
+  color: $text-color;
+  line-height: $line-height-base;
+  -webkit-text-size-adjust: 100%;
+}

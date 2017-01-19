@@ -1,0 +1,29 @@
+extends template/layout
+
+mixin article(title)
+  article
+    h1 #{title}
+    if block
+      block
+    else
+      p ダミーテキストです
+block title
+  title TOPページのタイトル
+block meta
+  meta(name="description", content="TOPページのディスクリプション") 
+  meta(name="keyword", content="TOPページのキーワード") 
+block ogpType
+  meta(property="og:type", content="website")
+block body
+  figure 
+  p
+    |テキスト
+    br
+    |テキスト
+  section
+    - for (var i = 0; i < 3; i++){
+      .block
+        h2(class=`${i}`) タイトル
+    - }
+  +article("タイトル")
+    p.txt テキストテキスト
